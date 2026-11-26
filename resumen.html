@@ -18,6 +18,9 @@
     <p class="legend">Los importes se muestran por moneda. Los productos sin precio cargado quedan como “A definir” y no se suman.</p>
     <section id="environments"></section>
   </main>
+  <style id="public-view-style">.public-view .check{pointer-events:none}.public-view #refreshBtn{display:none}.public-view .sub{color:#42614e}</style>
+  <script src="published-data.js?v=9841"></script>
+  <script>(function(){const isPublic=location.hostname.endsWith('github.io')||new URLSearchParams(location.search).has('readonly');if(!isPublic)return;document.body.classList.add('public-view');const key='g129-listado-bienes-v1',get=Storage.prototype.getItem,set=Storage.prototype.setItem;Storage.prototype.getItem=function(name){return name===key?JSON.stringify(window.g129PublishedData||[]):get.call(this,name)};Storage.prototype.setItem=function(name,value){if(name===key)return;return set.call(this,name,value)}})();</script>
   <script>
     const KEY='g129-listado-bienes-v1';
     const groups=[['Oficina Administración','Administración'],['Oficina Gerencia','Gerencia'],['Sala de reuniones','Sala de reuniones'],['Cocina','Cocina'],['Exterior','Exterior'],['Sin ubicación confirmada','Sin ubicación confirmada']];
