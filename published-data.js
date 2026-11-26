@@ -1,4 +1,4 @@
-window.g129PublishedData = +[
+window.g129PublishedData = [
   {
     "saleStatus": "available",
     "salePrice": "",
